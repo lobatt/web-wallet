@@ -160,7 +160,10 @@
     </div>
 
     <div class=footer></div>
+   <!-- Insert this line above script imports  -->
+   <script>if (typeof module === 'object') { window.module = module; module = undefined; }</script>
 
+   <!-- normal script imports etc  -->
     <script src=lib/jquery-3.3.1.min.js></script>
     <script src=lib/bootstrap-4.0.0-dist/js/bootstrap.bundle.min.js data-depends=jquery.slim></script>
     <script src=lib/bootbox.min.js data-depends="bootstrap jquery.slim"></script>
@@ -171,6 +174,8 @@
     <script src=js/home.v1.js></script>
     <script src=js/i18n.js data-depends=jquery.slim></script>
     <script src=js/ui-block.js data-depends="bootbox blockies jquery.slim i18n.js nebulas.js"></script>
+    <!-- Insert this line after script imports -->
+    <script>if (window.module) module = window.module;</script>
     <script>
         "use strict";
 

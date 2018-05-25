@@ -64,6 +64,9 @@ body {
     border-bottom: 2px solid #000;
 }
 
+.header .active {
+    border-bottom: 2px solid #000;
+}
 /*
     .icon-address
     ============================================================
