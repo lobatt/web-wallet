@@ -1,5 +1,16 @@
 
-# web-wallet
+# NebulasWallet Electron App(a wrapper around Nebulas web-wallet)
+
+Packged using [electron-packager](https://github.com/electron-userland/electron-packager) and [electron-installer-dmg](https://github.com/mongodb-js/electron-installer-dmg) 
+
+	git clone https://github.com/lobatt/web-wallet
+	npm i electron-packager -g
+	npm i electron-installer-dmg -g
+	electron-packager web-wallet/ NebulasWallet --platform=darwin --arch=x64 --icon=web-wallet/nebulas_logo.icns --overwrite
+	electron-installer-dmg NebulasWallet-darwin-x64/NebulasWallet.app NebulasWallet --icon=web-wallet/wallet.icns  --overwrite
+
+
+# Original README
 
 Nebulas wallet for the web. Nebulas users can use it to send transactions and submit smart contracts.
 
